@@ -50,3 +50,20 @@ function subtractNumbers (num1, num2) {
 addNumbers(5,77);
 subtractNumbers(5,77)
 console.log(calculator(5,77,addNumbers,subtractNumbers));
+
+function superHero (call1, call2) {
+    let result = call1 + call2;
+
+    return result;
+}
+
+function laserEyes (power) {
+    let result = 'I have ' + power + ' eyes ';
+    return result;
+}
+function superStrength (strength) {
+    let result = 'I also have super ' + strength;
+    return result;
+}
+
+console.log(superHero(laserEyes('laser'), superStrength('strength')));
