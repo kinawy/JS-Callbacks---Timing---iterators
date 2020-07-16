@@ -81,11 +81,10 @@ function blastOff () {
 }
 setTimeout(blastOff, 5000);
 
-function myName1 () {
-    let num = 0;
-    for (let i = 5; i>= num; i--) {
-        console.log(i);
-    }
-    console.log('My name is sameh.')
-}   
-setTimeout(myName1, 100);
+function myName1 (name) {
+    console.log(name);
+}
+let name1 = 'my name is sameh';
+setTimeout(function(){
+    myName1(name1);
+}, 1000);
