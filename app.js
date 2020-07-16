@@ -1,3 +1,5 @@
+// Call back functions
+
 function greeting (name, callback) {
     let sentence = 'Hello, my name is ' + name;
     // return sentence;
@@ -67,3 +69,23 @@ function superStrength (strength) {
 }
 
 console.log(superHero(laserEyes('laser'), superStrength('strength')));
+
+// Timing Functions
+
+function blastOff () {
+    let num = 0;
+    for (let i = 10; i>num; i--) {
+        console.log(i);
+    }
+    console.log("blast off!!");
+}
+setTimeout(blastOff, 5000);
+
+function myName1 () {
+    let num = 0;
+    for (let i = 5; i>= num; i--) {
+        console.log(i);
+    }
+    console.log('My name is sameh.')
+}   
+setTimeout(myName1, 100);
